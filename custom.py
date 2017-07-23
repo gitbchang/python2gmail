@@ -8,13 +8,13 @@ password = "11478542"
 from_email = username
 to_list = ["b.b.briann@gmail.com"]
 
-# email_conn = smtplib.SMTP(host, port)
-# email_conn.ehlo()
-# email_conn.starttls()
-# email_conn.login(username, password)
-# email_conn.sendmail(from_email, to_list, "Hello there this is python test2.")
+email_conn = smtplib.SMTP(host, port)
+email_conn.ehlo()
+email_conn.starttls()
+email_conn.login(username, password)
+email_conn.sendmail(from_email, to_list, "Hello there this is python test2.")
 
-# email_conn.quit()
+email_conn.quit()
 
 
 # from smtplib import SMTP
