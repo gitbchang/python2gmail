@@ -13,7 +13,7 @@ try:
 	email_conn.starttls()
 	email_conn.login(username, password)
 	# email_conn.sendmail(from_email, to_list, "Hello there this is python test2.")
-	# typically set to alternative
+	# typically set to alternative - tells system this is a html message
 	the_msg = MIMEMultipart("alternative")
 	the_msg['Subject'] = "Hello there!"
 	the_msg["From"] = from_email
